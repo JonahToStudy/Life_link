@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="rwd-j1.css" rel="stylesheet">
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <header>這裡是頁首
+            <!-- 臉書登入按鈕 -->
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+             FACEBOOK登入
+            </fb:login-button>
+        
+        </header>
+        <div>
+            <ul></ul>
+            <menu class="col-3 col-m-3">
+                <ul>
+                    <li><a href="#">登入|註冊</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Sence</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </menu>
+            <main class="col-6 col-m-9">
+                <div id="status"></div>
+                <div id="fbimg"></div>
+                內容區
+            </main>
+            <article class="col-3 col-m-12">廣告、其他</article>
+        </div>
+        
+        <footer>版權所有 | 高雄市 三民區 中正路 1000號 | 07 123 4567</footer>
+        
+        
+        
+        
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <!-- 將臉書messenger的js引入 -->
+        <script src="bot.js"></script>
+        <!-- 臉書messenger -->
+        <div class="fb-customerchat"
+          attribution="setup_tool"
+          page_id="102725245217336">
+        </div>
+        
+        <!-- 引入臉書登入js -->
+        <script src="fblogin.js"></script>
+        <!-- 臉書登入。載入JS SDK 非同部的來源網址 -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js"></script>  
+    </body>
+</html>
